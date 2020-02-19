@@ -16,10 +16,10 @@ class DataManager {
         course = CourseInfo("Android_Async", "Andrdoid Async Programming and Services")
         courses.set(course.courseId, course)
 
-        course = CourseInfo(courseId = "Java Fundamentals: The Java Language", title = "Java_Lang")
+        course = CourseInfo(courseId = "Java_Lang", title = "Java Fundamentals: The Java Language")
         courses.set(course.courseId, course)
 
-        course = CourseInfo(title = "Java_Core", courseId = "Java Fundamentals: The Core Platform")
+        course = CourseInfo(title = "Java Fundamentals: The Core Platform", courseId = "Java_Core")
         courses.set(course.courseId, course)
     }
 }
