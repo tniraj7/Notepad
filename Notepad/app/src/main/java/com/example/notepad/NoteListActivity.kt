@@ -1,5 +1,6 @@
 package com.example.notepad
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +15,8 @@ class NoteListActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
-
+            val activityIntent = Intent(this, NoteActivity::class.java)
+            startActivity(activityIntent)
         }
     }
 
