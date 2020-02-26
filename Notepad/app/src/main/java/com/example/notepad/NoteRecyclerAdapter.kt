@@ -22,7 +22,9 @@ class NoteRecyclerAdapter(private val context: Context, private val notes: List<
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        val note = notes[position]
+        holder.textCourse?.text = note.course?.title
+        holder.textTitle?.text = note.title
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
