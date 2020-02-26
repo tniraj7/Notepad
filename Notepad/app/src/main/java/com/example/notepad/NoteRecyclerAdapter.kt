@@ -17,9 +17,8 @@ class NoteRecyclerAdapter(private val context: Context, private val notes: List<
         return ViewHolder(itemView)
     }
 
-    override fun getItemCount(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+    override fun getItemCount() = notes.size
+
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val note = notes[position]
