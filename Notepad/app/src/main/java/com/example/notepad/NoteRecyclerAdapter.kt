@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class NoteRecyclerAdapter(private val context: Context):
+class NoteRecyclerAdapter(private val context: Context, private val notes: List<NoteInfo>):
     RecyclerView.Adapter<NoteRecyclerAdapter.ViewHolder>() {
 
     private val layoutInflater = LayoutInflater.from(context)
