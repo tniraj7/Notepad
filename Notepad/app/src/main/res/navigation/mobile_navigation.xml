@@ -23,6 +23,7 @@
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
 
+
     <fragment
         android:id="@+id/nav_tools"
         android:name="com.example.notepad.ui.tools.ToolsFragment"
@@ -40,4 +41,5 @@
         android:name="com.example.notepad.ui.send.SendFragment"
         android:label="@string/menu_send"
         tools:layout="@layout/fragment_send" />
+
 </navigation>
